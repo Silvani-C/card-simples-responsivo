@@ -1,0 +1,109 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background:#f6f9ff ;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #434343;
+}
+main .texto h1{
+    text-align: center;
+    font-size: 3.5em; 
+    padding: 90px 0 50px 0;
+}
+main .grupoCards{
+    display: flex;
+    padding: 32px;  
+}
+main .grupoCards .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 480px;
+    margin-left: 32px;
+}
+.icon{
+    width: 64px;  
+    height: 64px;
+}
+.card img{
+   width: 100%;
+}
+.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+.card span{
+    font-weight: 400;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+.card button{
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border:none;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight:bold;
+    margin: 10px;
+    color: #fff;
+}
+.card button:hover{
+    font-size: 90%;  
+    transition: all 0.5s; 
+}
+.card1 button{
+   background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+.card1{
+   box-shadow:20px 20px 50px -30px #c9aafb;
+}
+.card2 button{
+   background: linear-gradient(to right, #fe5f6f, #ffc7d9);
+}
+.card2{
+   box-shadow:20px 20px 50px -30px #f99ab8;
+}
+.card3 button{
+   background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+.card3{
+   box-shadow:20px 20px 50px -30px #9ac8f3;
+}
+h5{
+    text-align: center;
+    color:#151515;
+    padding: 50px;
+}
+/*media queries*/
+@media screen and ( max-width:520px) {
+    main .texto h1{
+    margin-top: -30px;
+    font-size: 2rem;
+}
+    main .grupoCards{
+    margin-top: -30px;
+    flex-direction: column;
+}
+    main .grupoCards .card{
+    margin-left: 0;
+    margin-bottom: 32px;
+}
+}
+
+
+
+
